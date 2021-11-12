@@ -34,7 +34,7 @@ function addElement() {
   modal.appendChild(divHeader);
 
   header.className = 'h1Class';
-  header.textContent = `${allProjects[0].name}`;
+  header.textContent = `${allProjects[0].names}`;
   divHeader.appendChild(header);
 
   closeBtn.classList.add('divBtnClass');
@@ -43,7 +43,7 @@ function addElement() {
 
   // Image
   img.className = 'imgClass';
-  img.src = `${allProjects[0].image}`;
+  img.src = `${allProjects[0].images}`;
 
   if (window.matchMedia('(min-width: 1000px)').matches) {
     img.src = './BG/Snapshoot-Portfolio-desktop.png';
